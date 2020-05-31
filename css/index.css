@@ -1,0 +1,489 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.nav{
+    height: 100px;
+    background-color: #FAFAF6;
+    color: #031926;
+    padding-right:60px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", "Arial", sans-serif;
+}
+
+.nav_buttons{
+    display: block;
+    padding: 20px;
+    float: right;
+    cursor: pointer;
+}
+
+.nav_buttons:hover{
+    text-decoration: underline;
+}
+
+p{
+    font-size: 20px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", "Arial", sans-serif;
+    color: #031926;
+}
+
+
+/* Hero Section */
+
+
+
+img{
+    height: 400px;
+    position: absolute;
+}
+
+.link{
+    cursor: pointer;
+    font-size: 16px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", "Arial", sans-serif;
+    color: #93B5C6;
+}
+
+.link:hover{
+    text-decoration: underline;
+}
+
+.aboutMe {
+    width: 50%;
+    padding-left: 30px;
+  }
+
+
+  .moreAboutMe button{
+    border: 1px solid;
+    border-color: #93B5C6;
+    color: #93B5C6;
+    border-radius: 4px;
+    height:40px;
+    width: 150px;
+    cursor: pointer;
+    background-color: #FAFAF6;
+  }
+
+  .moreAboutMe button:hover{
+    background-color: #93B5C6;
+    color: white;
+    transition: .4s;
+  }
+
+
+  .mobileImage{
+      display:none;
+  }
+
+  .samThomas{
+      padding-left:30px;
+      text-shadow: 2px 2px #03192631;
+      margin: 0px;
+  }
+
+  .samThomas h1{
+    color: #BD4F6C; 
+    margin:0px;
+  }
+
+  .myBio{
+      padding-left: 60px;
+  }
+
+  .right {
+    width: 50%;
+    padding-left: 30px;
+    padding-right:30px;
+  }
+  .heroSection {
+    height: 380px;
+    padding: 30px;
+    margin: 10px;
+    display: flex;
+    position: relative;
+  }
+
+  .heroSection img{
+      top: -20px;
+  }
+
+
+/*Case Studies Section*/
+
+#caseGrid {
+    margin: 0px 5%;
+    display: grid;
+    min-height: 500px;
+    grid-template-rows: 30% 70%;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+    "img title"
+    "img des";
+    background-color: #FAFAF6;
+    padding: 50px;
+  }
+
+  #caseGrid2 {
+    margin: 0px 5%;
+    display: grid;
+    min-height: 500px;
+    grid-template-rows: 30% 70%;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+    "img2 title"
+    "img2 des";
+    background-color: #FAFAF6;
+    padding: 50px;
+    padding-bottom: 30px;
+  }
+  
+  body{
+    background-color: #FAFAF6;
+  }
+
+  #prototypeImage {
+    grid-area: img;
+    background-image: url(../images/ecr.png);
+    opacity: 0;
+    transition: 1s;
+  }
+
+  #prototypeImage[data-scroll="in"]{
+    opacity: 1;
+    transition-delay: 0.5s;
+  }
+
+
+  #prototypeImage2 {
+    grid-area: img2;
+    background-image: url(../images/depofed.png);
+    opacity: 0;
+    transition: 1s;
+  }
+
+  #prototypeImage2[data-scroll="in"]{
+    opacity: 1;
+    transition-delay: 0.5s;
+  }
+
+  
+  #projectTitle {
+    grid-area: title;
+    padding-top: 43px;
+    transition: 1s;
+    transform: translateX(100px);
+    opacity: 0;
+  }
+
+#projectTitle[data-scroll="in"]{
+    transform: translateX(0);
+    transition-delay: 0.5s;
+    opacity: 1;
+}
+  
+  #description {
+    grid-area: des;
+    padding-left: 30px;
+    transition: 1s;
+    transform: translateY(100px);
+    opacity: 0;
+  }
+
+#description[data-scroll="in"]{
+    transform: translateY(0);
+    transition-delay: 0.5s;
+    opacity: 1;
+}
+  
+  h1{
+    font-size: 50px;
+    font-family: "Khmer MN", "Ogirema", "Times Sans Serif", sans-serif;
+    color: #031926;
+}
+
+  #headline {
+    background-color:#F0CF65;
+    position: absolute;
+    width: 600px;
+    right: 5px;
+    padding-left: 40px;
+    padding-top: 20px;
+    z-index: 100;
+    height: 80px;
+    margin: 0px;
+    display:flex;
+    align-items: center;
+    box-shadow: 5px 5px 5px rgba(49, 49, 49, 0.13);
+    opacity: 1;
+  }
+  
+  .caseGridArea {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    position: relative;
+  }
+
+  .readMore{
+    display:flex;
+    justify-content: center;
+    padding: 70px;
+  }
+
+  .readMore button{
+    border: 1px solid;
+    border-color: #93B5C6;
+    color: #93B5C6;
+    border-radius: 4px;
+    height:40px;
+    width: 150px;
+    cursor: pointer;
+    background-color: #FAFAF6;
+  }
+
+  .readMore button:hover{
+    background-color: #93B5C6;
+    color: white;
+    transition: .4s;
+  }
+
+
+
+
+
+/* footer */
+
+footer{
+background-color:#93B5C6;
+height: 250px;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+}
+
+footer img{
+    height: 40px;
+    padding-bottom:25px;
+}
+
+footer p{
+    font-size: 16px;
+    text-align: center;
+    line-height: 23px;
+}
+
+h2{
+    font-size: 30px;
+    font-family: "Khmer MN", "Ogirema", "Times Sans Serif", sans-serif;
+    color: #031926; 
+}
+
+/* responsive */
+
+@media only screen and (max-width: 900px){
+
+    /* navigation */
+
+    .nav{
+        padding-right:0px;
+        padding-left:0px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .nav_buttons{
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    ul{
+      padding-inline-start: 0px;
+    }
+
+    /* Hero Section */
+
+img{
+    height: 350px;
+}
+
+.mobileImage{
+    display:flex;
+}
+
+.heroSection {
+    height: 600px;
+    padding: 30px;
+    margin: 10px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0px;
+  }
+
+  .heroSection img{
+      top: 0px;
+      position: relative;
+  }
+
+
+.aboutMe {
+    width: 80%;
+    padding-left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .samThomas{
+      padding-left:0px;
+      margin: 0px;
+  }
+
+  .samThomas h1{
+    margin:0px;
+  }
+
+  .myBio{
+      padding-left: 0px;
+  }
+
+  .moreAboutMe{
+    display:flex;
+    justify-content:center;
+  }
+
+  .right {
+    display: none; /* hide the image */
+  }
+
+  /* Case Studies */ 
+  #caseGrid {
+    margin: 0px 5%;
+    display: grid;
+    min-height: 500px;
+    grid-template-rows: 10% 70% 20%;
+    grid-template-columns: 100%;
+    grid-template-areas:
+    "title"
+    "img" 
+    "des";
+    background-color: #FAFAF6;
+    padding: 0px;
+    padding-top: 130px;
+    padding-bottom: 50px;
+  }
+
+  #headline {
+    position: relative;
+    width: 600px;
+    padding-top: 20px;
+    z-index: 100;
+    height: 80px;
+    margin: 0px;
+    justify-content: center;
+    right: 0px;
+    padding-left: 0px;
+
+}
+
+#projectTitle {
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+  }
+
+  #prototypeImage {
+      margin-left: 50px;
+      margin-right: 50px;
+  }
+
+  #caseGrid2 {
+    margin: 0px 5%;
+    display: grid;
+    min-height: 500px;
+    grid-template-rows: 10% 70% 20%;
+    grid-template-columns: 100%;
+    grid-template-areas:
+    "title"
+    "img2" 
+    "des";
+    background-color: #FAFAF6;
+    padding: 0px;
+    padding-top: 130px;
+    padding-bottom: 80px;
+  }
+
+
+#projectTitle2 {
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+  }
+
+  #prototypeImage2 {
+      margin-left: 50px;
+      margin-right: 50px;
+  }
+
+}
+
+
+@media only screen and (max-width: 620px){
+    h1{
+        font-size:28px;
+    }
+
+    #headline{
+        height: 60px;
+    }
+
+    p{
+        font-size: 18px;
+    }
+
+    img{
+        height: 300px;
+    }
+
+    #caseGrid{
+        padding-top: 30px;
+    }
+
+    #caseGrid2{
+      padding-bottom: 40px;
+    }
+}
+
+@media only screen and (max-width: 325px){
+  h1{
+    font-size:20px;
+  }
+
+  img{
+    height:200px;
+  }
+
+  .heroSection{
+    height: 450px;
+  }
+
+  p{
+    font-size: 14px;
+  }
+
+  #headline{
+    height:40px;
+  }
+
+  .aboutMe{
+    width: 90%
+  }
+}
+
+

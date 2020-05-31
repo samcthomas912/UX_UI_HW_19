@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <link href="css/index.css" rel="stylesheet" type="text/css">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    </head>
+    <body>
+        
+        <!--Navigation-->
+        <header class = "nav">
+            <ul>
+                <li class = "nav_buttons">Work</li>
+                <li class = "nav_buttons">Resume</li>
+                <li class = "nav_buttons">About Me</li>
+            </ul>
+        </header>
+
+    <!-- Hero Image -->
+
+        <section class="heroSection">
+            <div class="mobileImage">
+                <img src = "images/profilewcubes.png">
+            </div>
+            <div class = "aboutMe">
+                <div class = "hello"><p>Hello, my name is</p></div>
+                <div class = "samThomas"><h1>Sam Thomas</h1></div>
+                <div class = "myBio"><p>I am a math teacher turned UX/UI designer.</p> 
+    
+                    <p>Combining my knowledge and experience of math and art allows me to design from logical and creative perspectives.
+                    </p>
+                    <div class = "moreAboutMe">
+                    <button><b>More About Me!</b></button></div>
+                 </div>
+            </div>
+            <div class="right">
+                <img src = "images/profilewcubes.png">
+            </div>
+          </section>
+
+
+
+    </section>
+
+        <!--Case Studies-->
+        <section id="caseGrid">
+            <div id="prototypeImage" class="caseGridArea">
+            </div>
+            <div id="projectTitle" class="caseGridArea">
+                <div id="headline">
+                    <h1>Every Child Ready</h1>
+                  </div>
+            </div>
+            <div id="description" class="caseGridArea">
+                <p>Every Child Ready is developing a responsive platform design for both desktop and mobile, to help educational professionals to enrich the lives of their students. Our redesign is an improvement because it’s a simplified, cleaner, more user friendly, navigable, and responsive platform. 
+                    <div class = "link">
+                        <a>View Project</a> </p>
+                        </div>
+          </section>
+
+          <section id="caseGrid2">
+            <div id="prototypeImage2" class="caseGridArea">
+            </div>
+            <div id="projectTitle" class="caseGridArea">
+                <div id="headline">
+                    <h1>Department of Education</h1>
+                  </div>
+            </div>
+            <div id="description" class="caseGridArea">
+                <p>A redesign of the current US Department of Education site, focusing on cleaning the navigation. 
+                    <div class = "link">
+                        <a>View Project</a> </p>
+                        </div>
+          </section>
+          <div class = "readMore">
+              <button><b>All Projects</b></button>
+            </div>
+
+
+    <!--Footer-->
+       <footer>
+           <h2>Let’s get in touch!</h2>
+           <img src = "images/lnlogo.png">
+           <p>Samantha Thomas<br>
+           samcthomas912@gmail.com<br>
+           703-509-8604
+        </p>
+
+       </footer>
+       <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+       <script src="js/index.js"></script>
+       <script src="fadein.js"></script>
+       <script src = "scroll-out.js"></script>
+       <script type = "text/javascript">
+       ScrollOut({
+           targets: '#prototypeImage,#prototypeImage2,#projectTitle,#description'
+       })
+       </script>
+    </body>
+</html>
