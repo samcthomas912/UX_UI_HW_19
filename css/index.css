@@ -77,6 +77,7 @@ img{
       display:none;
   }
 
+
   .samThomas{
       padding-left:30px;
       text-shadow: 2px 2px #03192631;
@@ -94,8 +95,13 @@ img{
 
   .right {
     width: 50%;
-    padding-left: 30px;
+    padding-left: 100px;
     padding-right:30px;
+  }
+  .right img{
+    margin-top: 40px;
+    height:360px;
+    margin-left:50px;
   }
   .heroSection {
     height: 380px;
@@ -506,6 +512,7 @@ img{
   animation: spin 3s ease;
   transition: all;
   margin: 0 auto;
+  box-shadow: 5px 5px 5px rgba(49, 49, 49, 0.13);
 }
 
 @keyframes spin{
@@ -522,3 +529,151 @@ img{
       background-color: #93B5C6;
     }
   }
+
+  .spins{
+    animation: spinning 2s ease;
+  }
+
+  @keyframes spinning{
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(720deg);
+    }
+  }
+
+  
+  #block1{
+    height:180px;
+    width: 110px;
+    background-color:#F0CF65;
+    position: relative;
+    top: -40px;
+    left: 360px;
+    transition: transform 2s;
+  }
+  
+  #block1:hover{
+    transform: rotate(720deg);
+  }
+
+  #block2{
+    height:230px;
+    width: 228px;
+    background-color:#BD4F6C;
+    position: relative;
+    top: -20px;
+    right: 50px;
+    transition: transform 2s;
+  }
+  
+  #block2:hover{
+    transform: rotate(720deg);
+  }
+
+  #block3{
+    height:50px;
+    width: 50px;
+    background-color:#93B5C6;
+    position: relative;
+    top: -190px;
+    left: 360px;
+    transition: transform 2s;
+  }
+  
+  #block3:hover{
+    transform: rotate(720deg);
+  }
+
+  #block4{
+    height:20px;
+    width: 20px;
+    background-color:#BD4F6C;
+    position: relative;
+    top: -120px;
+    left: 427px;
+    transition: transform 2s;
+  }
+  
+  #block4:hover{
+    transform: rotate(720deg);
+  }
+
+  #block5{
+    height:26px;
+    width: 26px;
+    background-color:#BD4F6C;
+    position: relative;
+    top: -540px;
+    left: 277px;
+    transition: transform 2s;
+  }
+  
+  #block5:hover{
+    transform: rotate(720deg);
+  }
+
+  #block6{
+    height:46px;
+    width: 46px;
+    background-color:#D7816A;
+    position: relative;
+    top: -537px;
+    left: 35px;
+    transition: transform 2s;
+    box-shadow: 5px 5px 5px rgba(49, 49, 49, 0.13);
+  }
+  
+  #block6:hover{
+    transform: rotate(720deg);
+  }
+
+  #block7{
+    height:28px;
+    width: 26px;
+    background-color:#F0CF65;
+    position: relative;
+    top: -507px;
+    right: 30px;
+    transition: transform 2s;
+    box-shadow: 5px 5px 5px rgba(49, 49, 49, 0.13);
+  }
+  
+  #block7:hover{
+    transform: rotate(720deg);
+  }
+
+  #block8{
+    height:48px;
+    width: 48px;
+    background-color:#93B5C6;
+    position: relative;
+    top: -310px;
+    right: 80px;
+    transition: transform 2s;
+    box-shadow: 5px 5px 5px rgba(49, 49, 49, 0.13);
+  }
+  
+  #block8:hover{
+    transform: rotate(720deg);
+    
+  }
+
+  #block9{
+    height:48px;
+    width: 48px;
+    background-color:#D7816A;
+    position: relative;
+    top: -300px;
+    left: 280px;
+    transition: transform 2s;
+    box-shadow: 5px 5px 5px rgba(49, 49, 49, 0.13);
+  }
+  
+  #block9:hover{
+    transform: rotate(720deg);
+  }
+
+
+  
