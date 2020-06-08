@@ -42,7 +42,7 @@ img{
     cursor: pointer;
     font-size: 16px;
     font-family: "Lucida Sans Unicode", "Lucida Grande", "Arial", sans-serif;
-    color: #93B5C6;
+    color: #BD4F6C;
 }
 
 .link:hover{
@@ -57,8 +57,8 @@ img{
 
   .moreAboutMe button{
     border: 1px solid;
-    border-color: #93B5C6;
-    color: #93B5C6;
+    border-color: #BD4F6C;
+    color: #BD4F6C;
     border-radius: 4px;
     height:40px;
     width: 150px;
@@ -67,7 +67,7 @@ img{
   }
 
   .moreAboutMe button:hover{
-    background-color: #93B5C6;
+    background-color: #BD4F6C;
     color: white;
     transition: .4s;
   }
@@ -92,6 +92,11 @@ img{
   .myBio{
       padding-left: 60px;
   }
+
+  .myBio p {
+    margin-top: -10px;
+  }
+  
 
   .right {
     width: 50%;
@@ -241,8 +246,8 @@ img{
 
   .readMore button{
     border: 1px solid;
-    border-color: #93B5C6;
-    color: #93B5C6;
+    border-color: #BD4F6C;
+    color: #BD4F6C;
     border-radius: 4px;
     height:40px;
     width: 150px;
@@ -251,7 +256,7 @@ img{
   }
 
   .readMore button:hover{
-    background-color: #93B5C6;
+    background-color: #BD4F6C;
     color: white;
     transition: .4s;
   }
@@ -299,6 +304,7 @@ h2{
         padding-left:0px;
         display: flex;
         justify-content: center;
+        height: 70px;
     }
     
     .nav_buttons{
@@ -323,6 +329,7 @@ img{
 .heroSection {
     height: 600px;
     padding: 30px;
+    padding-bottom: 0px;
     margin: 10px;
     display: flex;
     position: relative;
@@ -463,6 +470,10 @@ img{
 
     #caseGrid2{
       padding-bottom: 40px;
+    }
+
+    .myBio p {
+      margin-top: 0px;
     }
 }
 
