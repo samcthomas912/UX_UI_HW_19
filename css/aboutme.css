@@ -98,7 +98,7 @@ footer{
     
     footer img{
         height: 40px;
-        padding-bottom:25px;
+        margin-bottom: -20px;
     }
     
     footer p{
@@ -107,10 +107,11 @@ footer{
         line-height: 23px;
     }
     
-    h2{
+    footer h2{
         font-size: 30px;
         font-family: "Khmer MN", "Ogirema", "Times Sans Serif", sans-serif;
         color: #031926; 
+        margin-bottom: -20px;
     }
 
    .content img{
