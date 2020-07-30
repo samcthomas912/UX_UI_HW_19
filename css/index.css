@@ -13,6 +13,7 @@ html, body {
   justify-content: flex-end;
   align-items: center;
   text-decoration: none;
+  margin-bottom: 40px;
 }
 
 .sitenav a{
@@ -163,6 +164,21 @@ a{
     padding: 50px;
     padding-bottom: 30px;
   }
+
+  #caseGrid3 {
+    margin: 0px 5%;
+    display: grid;
+    min-height: 500px;
+    grid-template-rows: 30% 70%;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+    "img3 title"
+    "img3 des";
+    background-color: #FAFAF6;
+    padding: 50px;
+    padding-bottom: 30px;
+  }
+  
   
   body{
     background-color: #FAFAF6;
@@ -188,11 +204,23 @@ a{
     transition: 1s;
   }
 
+  #prototypeImage3 {
+    grid-area: img3;
+    background-image: url(../images/tcupcakes.png);
+    opacity: 0;
+    transition: 1s;
+  }
+
+
   #prototypeImage2[data-scroll="in"]{
     opacity: 1;
     transition-delay: 0.5s;
   }
 
+  #prototypeImage3[data-scroll="in"]{
+    opacity: 1;
+    transition-delay: 0.5s;
+  }
   
   #projectTitle {
     grid-area: title;
